@@ -1,0 +1,24 @@
+{
+  "name": "smart-home-widget",
+  "productName": "Smart Home Widget",
+  "version": "1.0.0",
+  "description": "Widget de bandeja para Windows e dashboard web para casas com dispositivos Tuya / Smart Life",
+  "license": "MIT",
+  "private": true,
+  "main": "main.js",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "start": "electron .",
+    "server": "node server.js",
+    "dist": "electron-packager . \"Smart Home Widget\" --platform=win32 --arch=x64 --out=dist --overwrite --no-asar --ignore=\"^/dist\" --ignore=\"^/.cache\" --ignore=\"^/docs\" --ignore=\"^/config.example.json\""
+  },
+  "dependencies": {
+    "androidtv-remote": "^1.0.10"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "electron": "^44.7.0"
+  }
+}

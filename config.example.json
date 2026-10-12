@@ -1,0 +1,12 @@
+{
+  "tuya": {
+    "accessId": "",
+    "accessSecret": "",
+    "endpoint": "https://openapi.tuyaus.com"
+  },
+  "title": "Casa",
+  "port": 5070,
+  "rooms": {
+    "Nome ou ID do dispositivo": "Sala"
+  }
+}

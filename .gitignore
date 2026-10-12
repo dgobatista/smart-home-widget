@@ -1,0 +1,6 @@
+# chaves da conta Tuya — nunca vão para o repositório
+config.json
+
+node_modules/
+dist/
+.cache/

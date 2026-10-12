@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f1216">
+  <title>Casa</title>
+  <link rel="stylesheet" href="style.css">
+  <script>if (location.search.includes('widget')) document.documentElement.classList.add('widget');</script>
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>Casa</h1>
+      <p class="clock" id="clock"></p>
+    </div>
+    <button class="btn" id="all-off" type="button" title="Apagar todas as luzes">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v9M6.3 6.8a8 8 0 1 0 11.4 0"/></svg>
+      <span>Apagar todas as luzes</span>
+    </button>
+  </header>
+
+  <div class="banner" id="banner" hidden></div>
+
+  <section class="summary" id="summary" aria-label="Resumo da casa"></section>
+
+  <nav class="tabs" id="tabs" aria-label="Filtrar dispositivos"></nav>
+
+  <main id="rooms"><p class="empty">Carregando dispositivos…</p></main>
+
+  <dialog id="detail" aria-labelledby="detail-title"></dialog>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
